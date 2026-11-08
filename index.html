@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VignetteMuseum Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f5f8;
+    --surface: #ffffff;
+    --text: #1a2233;
+    --muted: #5b6577;
+    --line: #d9dee7;
+    --accent: #7d5f17;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1420;
+      --surface: #161e2d;
+      --text: #e9e4d6;
+      --muted: #a39f92;
+      --line: #263146;
+      --accent: #d2ae5b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+  h1, h2 { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; line-height: 1.2; }
+  h1 { font-size: 2.6rem; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
+  p { margin: 0 0 1rem; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 2rem; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; margin-bottom: .75rem; }
+  summary { cursor: pointer; padding: .9rem 1.1rem; font-weight: 600; list-style-position: inside; }
+  details[open] summary { border-bottom: 1px solid var(--line); }
+  details p { padding: 0 1.1rem; margin: 1rem 0; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>VignetteMuseum</h1>
+  <p class="lead">A private museum for your collection. Add a photo of a watch, a model car or a brick set, and it becomes a glowing card that tilts with your device.</p>
+
+  <h2>Questions and answers</h2>
+
+  <details>
+    <summary>How do I sync my collection across devices?</summary>
+    <p>Sign in to the same Apple Account in your device’s Settings on every iPhone, iPad and Mac. In VignetteMuseum, open Sync Settings (the cloud button), turn on “Sync with iCloud”, then close and reopen the app. Sync is off by default and has to be turned on on each device.</p>
+  </details>
+
+  <details>
+    <summary>My items do not show up on another device.</summary>
+    <p>Check that sync is on in both apps, that both devices use the same Apple Account, and that iCloud is available (Sync Settings shows the account status). Then close and reopen the app on both devices and give it a minute.</p>
+  </details>
+
+  <details>
+    <summary>How do I back up my collection to a file?</summary>
+    <p>Use “Back Up Museum to File…” to save everything as a single <strong>.vignette</strong> file, including purchase dates and prices. Keep it somewhere safe, like iCloud Drive. To restore, choose “Import .vignette File…”.</p>
+  </details>
+
+  <details>
+    <summary>How do I share a piece or a collection with another collector?</summary>
+    <p>Choose “Export &amp; Share”. You decide whether the purchase date and price are included. If you leave them unchecked, they are not written to the file at all. The other person opens it with “Import .vignette File…”.</p>
+  </details>
+
+  <details>
+    <summary>The background was not removed from my photo.</summary>
+    <p>Background removal uses Apple’s Vision framework on your device. It works best when the item is the clear subject of the photo, on a plain background with good light. When no subject is found, the card simply shows your photo as it is.</p>
+  </details>
+
+  <details>
+    <summary>Why do the cards not tilt on my Mac?</summary>
+    <p>Cards react to device motion on iPhone and iPad. Macs have no motion sensors.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my data?</summary>
+    <p>Delete pieces and collections inside the app. Deleting the app removes the data stored on that device. If you used iCloud sync, copies stay in your iCloud storage until you remove them there; turning sync off only stops future syncing.</p>
+  </details>
+
+  <h2>Contact</h2>
+  <p>Questions, bug reports or ideas: <a href="mailto:vignettepic@gmail.com">vignettepic@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
